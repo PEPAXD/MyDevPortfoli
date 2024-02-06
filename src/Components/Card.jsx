@@ -1,22 +1,33 @@
-import React from "react";
-import image1 from "../assets/image1.jpg";
 import "./Styles/Card.scss";
+import React from "react";
+import PropTypes from 'prop-types';
 
-function Card() {
+import 'animate.css';
+
+
+function Card(props) {
   return (
-    <div className="card">
-        <img src={image1} alt="" />
-      <div className="card-body">
-        <h4 className="card-tittle">CardTittle</h4>
+    <div className="card bg-dark animate__animated animate__fadeInUp">
+        <img src={props.image} alt="" />
+      <div className="card-body text-light">
+        <h4 className="card-tittle">{props.tittle}</h4>
         <p className="card-text text-secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eveniet
-          molestias. Impedit id aperiam libero qui facilis harum, natus quaerat.
-          Quaerat a, obcaecati nostrum culpa et architecto molestias. Quas,
-          autem!
+            {
+                props.text ? props.text : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit deserunt laborum ducimus temporibus odit placeat dolores rerum, nihil, suscipit natus porro et quas perferendis perspiciatis unde nemo, ea ad! Explicabo."
+            }
         </p>
+        <a href={props.url} className="btn btn-outline-success">
+          Go To This Website 
+        </a>
       </div>
     </div>
   );
+}
+
+Card.PropTypes = {
+    tittle: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    url: PropTypes.string,
 }
 
 export default Card;
