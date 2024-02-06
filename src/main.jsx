@@ -4,6 +4,8 @@ import ReactDOM from "react-dom/client";
 
 import App from "./Components/App.jsx";
 import Header from "./Components/Header.jsx";
+import Footer from "./Components/Footer.jsx";
+
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <div className="containApp">
       <Header />
       <App />
+      <Footer />
     </div>
   </React.StrictMode>
 );

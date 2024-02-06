@@ -10,54 +10,55 @@ import image3 from "../assets/image3.jpg";
 const cards = [
   {
     id: 1,
-    tittle: "testCard1",
+    tittle: "tittle-1",
     image: image1,
     url: "https://www.google.com",
-    text: "Test Card 1 Text",
+
   },
   {
     id: 2,
-    tittle: "testCard2",
+    tittle: "tittle-2",
     image: image2,
     url: "https://www.youtube.com",
-    text: "Test Card 2 Text",
+
   },
   {
     id: 3,
-    tittle: "testCard3",
+    tittle: "tittle-3",
     image: image3,
     url: "https://www.instagram.com",
-    text: "Test Card 3 Text",
+
   },
   {
     id: 4,
-    tittle: "testCard4",
+    tittle: "tittle-4",
     image: image1,
     url: "https://www.instagram.com",
-    text: "Test Card 4 Text",
+
   },
   {
     id: 5,
-    tittle: "testCard5",
+    tittle: "tittle-5",
     image: image2,
     url: "https://www.instagram.com",
-    text: "Test Card 5 Text",
+
   },
   {
     id: 6,
-    tittle: "testCard6",
+    tittle: "tittle-6",
     image: image3,
     url: "https://www.instagram.com",
-    text: "Test Card 6 Text",
+
   },
+  
 ];
 
 function Cards() {
   return (
-    <div className="container d-flex justify-content-cente align-items-center h-100">
-      <div className="row">
+    <div className="cardContainer">
+
         {cards.map((card) => (
-          <div className="col-md-4" key={card.id}>
+          <div className="cards" key={card.id}>
             <Card
               tittle={card.tittle}
               image={card.image}
@@ -67,7 +68,7 @@ function Cards() {
           </div>
         ))}
       </div>
-    </div>
+
   );
 }
 

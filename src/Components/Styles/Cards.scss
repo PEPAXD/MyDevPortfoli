@@ -1,0 +1,20 @@
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    height: 80%;
+    gap: 0.5rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: calc(30%);
+
+    height: 48%;
+    border: 2px solid #fff;
+}
