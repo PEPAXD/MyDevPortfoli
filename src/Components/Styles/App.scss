@@ -1,24 +1,4 @@
-
-.background{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.container{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    width: 30rem;
-    height: 30rem;
-
-    background: #fff;
-
-    h1{
-        text-transform: uppercase;
-    }
+.App{
+    background: #333;
+    height: 100vh;
 }
