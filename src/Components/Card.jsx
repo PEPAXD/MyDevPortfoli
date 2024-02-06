@@ -24,10 +24,5 @@ function Card(props) {
   );
 }
 
-Card.PropTypes = {
-    tittle: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    url: PropTypes.string,
-}
 
 export default Card;

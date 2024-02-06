@@ -11,3 +11,8 @@
 
   font-family: Arial, sans-serif;
 }
+
+.containApp {
+  min-height: 100vh;
+  background-color: #333;
+}
