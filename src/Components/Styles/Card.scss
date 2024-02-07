@@ -1,35 +1,110 @@
-.proyectCard{
+.proyectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(33, 37, 41);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  z-index: 99;
+
+  img {
     width: 100%;
-    height: 100%;
-    background-color: rgb(33, 37, 41);
-    z-index: 99;
-
-    img{
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-    }
+    height: 50%;
+    object-fit: cover;
+  }
 }
 
-.textCard{
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 1rem;
+}
+
+.textCard {
+  font-size: 1em;
+  color: #fff;
+  h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.devToolsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  gap: 1rem;
+}
+
+.techContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  color: #fff;
+
+  h5 {
+    margin: 0rem;
+  }
+
+  .skills {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
-    width: 90%;
-    height: 70%;
-    font-size: 0.6em;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  gap: 1rem;
+
+  a {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    text-decoration: none;
+
+    width: 100%;
+
+    background-color: #1a1a1a;
+    cursor: pointer;
     color: #fff;
+    transition: all 0.3s ease;
 
-
-    h4{
-        text-transform: uppercase;
-        font-weight: 600;
+    &:hover {
+      box-shadow: 0px 0px 11px -4px #976cff;
+      border-color: #976cff;
+      background-color: #2e2546;
     }
+
+    &:active {
+      box-shadow: 0px 0px 11px -7px #976cff;
+      border-color: #976cff;
+      transform: scale(0.95);
+    }
+  }
 }

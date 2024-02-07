@@ -14,43 +14,7 @@ const cards = [
     image: image1,
     url: "https://www.google.com",
 
-  },
-  {
-    id: 2,
-    tittle: "tittle-2",
-    image: image2,
-    url: "https://www.youtube.com",
-
-  },
-  {
-    id: 3,
-    tittle: "tittle-3",
-    image: image3,
-    url: "https://www.instagram.com",
-
-  },
-  {
-    id: 4,
-    tittle: "tittle-4",
-    image: image1,
-    url: "https://www.instagram.com",
-
-  },
-  {
-    id: 5,
-    tittle: "tittle-5",
-    image: image2,
-    url: "https://www.instagram.com",
-
-  },
-  {
-    id: 6,
-    tittle: "tittle-6",
-    image: image3,
-    url: "https://www.instagram.com",
-
-  },
-  
+  },  
 ];
 
 function Cards() {
