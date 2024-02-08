@@ -2,14 +2,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Styles/App.scss";
 import React from "react";
 
-import Header from "./Header";
+import NavBar from "./NavBar";
 import CardBoostrap from "./CardBoostrap";
 import data from "../Data/dataProjects";
 
 function App() {
   return (
     <>
-      <Header />
+      <NavBar />
       <div className="ContainApp">
         <div className="containerCards">
           {data.map((data) => (
@@ -24,7 +24,9 @@ function App() {
             </div>
           ))}
         </div>
+        
       </div>
+      <NavBar position={"footer"}/>
     </>
   );
 }
