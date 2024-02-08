@@ -14,11 +14,11 @@ import {
 
 function Card(props) {
   return (
-    <div className="proyectCard">
+    <div className="proyectCard animate__animated animate__fadeInUp">
       <img src={props.image} alt="" />
 
       <div className="overlay">
-        <div className="textCard">
+        <div className="descriptionCo">
           <h4>{props.tittle}</h4>
           <p>
             {props.text
@@ -26,6 +26,7 @@ function Card(props) {
               : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit deserunt laborum ducimus temporibus odit placeat dolores rerum, nihil, suscipit natus porro et quas perferendis perspiciatis unde nemo, ea ad! Explicabo."}
           </p>
         </div>
+
 
         <div className="devToolsContainer">
           <div className="techContainer">
@@ -40,9 +41,13 @@ function Card(props) {
 
           <div className="linkContainer">
             <a
-              href={props.url}
-              className="link"
-              style={{ display: "flex", alignItems: "center" }}
+              href={props.urlDeploy}
+              target="_blank"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
               <FaExternalLinkAlt
                 style={{ marginRight: "10px", fontSize: "0.9em" }}
@@ -51,9 +56,13 @@ function Card(props) {
             </a>
 
             <a
-              href={props.url}
-              className="sourceCode"
-              style={{ display: "flex", alignItems: "center" }}
+              href={props.urlRepo}
+              target="_blank"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
               <FaCode style={{ marginRight: "10px" }} />
               Source Code

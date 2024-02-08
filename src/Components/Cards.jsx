@@ -3,36 +3,26 @@ import "./Styles/Cards.scss";
 import React from "react";
 import Card from "./Card";
 
-import image1 from "../assets/image1.jpg";
-import image2 from "../assets/image2.jpg";
-import image3 from "../assets/image3.jpg";
-
-const cards = [
-  {
-    id: 1,
-    tittle: "tittle-1",
-    image: image1,
-    url: "https://www.google.com",
-
-  },  
-];
+import data from '../Data/dataProjects';
 
 function Cards() {
   return (
-    <div className="cardContainer">
-
-        {cards.map((card) => (
-          <div className="cards" key={card.id}>
+    <div className="componentContainer">
+      {" "}
+      <div className="cardContainer">
+        {data.map((data) => (
+          <div className="cards" key={data.id}>
             <Card
-              tittle={card.tittle}
-              image={card.image}
-              text={card.text}
-              url={card.url}
+              tittle={data.tittle}
+              image={data.image}
+              text={data.text}
+              urlDeploy={data.urlDeploy}
+              urlRepo={data.urlRepo}
             />
           </div>
         ))}
       </div>
-
+    </div>
   );
 }
 
