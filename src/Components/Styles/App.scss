@@ -1,8 +1,14 @@
-.App {
-  height: 100vh;
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  }
+
+.ContainApp{
+    display: flex;
+    justify-content: center;
+    margin: 7% 0%;
 }

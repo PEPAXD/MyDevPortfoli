@@ -1,3 +1,10 @@
-.navbar-custom{
-  background-color: #3B5B65;
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.HeaderContainer{
+    background-color: #007D5C;
 }

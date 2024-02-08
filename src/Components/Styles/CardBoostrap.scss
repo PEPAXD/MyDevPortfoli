@@ -1,0 +1,70 @@
+.card {
+  width: 25rem;
+  height: 35rem;
+  border: none;
+  border-radius: 0rem;
+
+  box-shadow: 0 0 10px #000000;
+
+  img{
+    height: 35%;
+    object-fit: cover;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+.dataContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tittle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.skillsContain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+
+    .techTittle{
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+
+    svg{
+        font-size: 1.2em;
+        margin: 0rem 0.5rem;
+    }
+}
+
+hr{
+    width: 100%;
+    margin: 0.5rem;
+    border: 1px solid black;
+}
+
+.linkContain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+
+  .card-link {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    background-color: aqua;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+}
