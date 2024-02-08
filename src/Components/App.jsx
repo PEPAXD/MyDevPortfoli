@@ -1,13 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Styles/App.scss";
 import React from "react";
-import Cards from "./Cards";
+
+import Header from "./Header";
 
 function App() {
   return (
     <>
-     <div className="App">
-      <Cards />
-     </div>
+      <Header />
     </> 
   );
 }
