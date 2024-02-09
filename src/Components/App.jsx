@@ -26,7 +26,7 @@ function App() {
         </div>
         
       </div>
-      <NavBar position={"footer"}/>
+
     </>
   );
 }

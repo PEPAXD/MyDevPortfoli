@@ -21,6 +21,51 @@ const dataProjects = [
     id: 3,
     tittle: "Authentication-App",
     image:
+      "https://media.licdn.com/dms/image/D4D22AQFce8xuMgHf7g/feedshare-shrink_2048_1536/0/1706031873311?e=1710374400&v=beta&t=W2xI3NLpNUSLdmKCSGfuO4szNktgmOn2kNPYEJC26N0",
+    urlDeploy: "https://pepaxd.github.io/authenticationUser/",
+    urlRepo: "https://github.com/PEPAXD/authenticationUser",
+    text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
+  },
+  {
+    id: 4,
+    tittle: "Authentication-App",
+    image:
+      "https://media.licdn.com/dms/image/D4D22AQG3Sd0ynsI1Pg/feedshare-shrink_2048_1536/0/1702498975550?e=1710374400&v=beta&t=1cEp6iY0LtJ7nzB03RvzqZ3D1B3ubRpgpxND14SkNVs",
+    urlDeploy: "https://pepaxd.github.io/authenticationUser/",
+    urlRepo: "https://github.com/PEPAXD/authenticationUser",
+    text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
+  },
+  {
+    id: 5,
+    tittle: "Authentication-App",
+    image:
+      "https://media.licdn.com/dms/image/D4D22AQHz6NKoyNh_4A/feedshare-shrink_2048_1536/0/1699381089101?e=1710374400&v=beta&t=KVnB9-e4oEw3nauC8uMXClBR7gGETVqT2TODppxkS84",
+    urlDeploy: "https://pepaxd.github.io/authenticationUser/",
+    urlRepo: "https://github.com/PEPAXD/authenticationUser",
+    text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
+  },
+  {
+    id: 6,
+    tittle: "Authentication-App",
+    image:
+      "https://media.licdn.com/dms/image/D4D22AQEC5s6hbMD9Hw/feedshare-shrink_2048_1536/0/1694295450930?e=1710374400&v=beta&t=1WSn6LHHUN2K7GrVq2AFS506GnqNcQ0QlD7qULvGKhE",
+    urlDeploy: "https://pepaxd.github.io/authenticationUser/",
+    urlRepo: "https://github.com/PEPAXD/authenticationUser",
+    text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
+  },
+  {
+    id: 4,
+    tittle: "Authentication-App",
+    image:
+      "https://raw.githubusercontent.com/PEPAXD/SiamesMP3Player/main/screenshot.jpg",
+    urlDeploy: "https://pepaxd.github.io/authenticationUser/",
+    urlRepo: "https://github.com/PEPAXD/authenticationUser",
+    text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
+  },
+  {
+    id: 4,
+    tittle: "Authentication-App",
+    image:
       "https://raw.githubusercontent.com/PEPAXD/SiamesMP3Player/main/screenshot.jpg",
     urlDeploy: "https://pepaxd.github.io/authenticationUser/",
     urlRepo: "https://github.com/PEPAXD/authenticationUser",

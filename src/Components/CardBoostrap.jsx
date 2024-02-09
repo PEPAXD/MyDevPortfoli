@@ -1,6 +1,7 @@
 import "./Styles/CardBoostrap.scss";
 import Card from "react-bootstrap/Card";
 
+import "animate.css";
 import {
   FaExternalLinkAlt,
   FaCode,
@@ -12,6 +13,7 @@ import {
 
 function TextExample(props) {
   return (
+    <div className="animateCard animate__animated animate__fadeInUp">
     <Card>
       <img src={props.image} alt="" />
 
@@ -40,13 +42,39 @@ function TextExample(props) {
 
           <hr />
 
-          <div className="linkContain">
-            <Card.Link href="#">Card Link</Card.Link>
-            <Card.Link href="#">Another Link</Card.Link>
+          <div className="linkContainer">
+            <a
+              href={props.urlDeploy}
+              target="_blank"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <FaExternalLinkAlt
+                style={{ marginRight: "10px", fontSize: "0.9em" }}
+              />
+              View Project
+            </a>
+
+            <a
+              href={props.urlRepo}
+              target="_blank"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <FaCode style={{ marginRight: "10px" }} />
+              Source Code
+            </a>
           </div>
         </div>
       </Card.Body>
     </Card>
+    </div>
   );
 }
 

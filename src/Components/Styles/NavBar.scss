@@ -1,0 +1,42 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.HeaderContainer {
+  height: 3rem;
+  background-color: #325d73;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.skillsCheckboxes {
+    
+
+
+  label {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3rem;
+    width: 8rem;
+
+    font-size: 1.2em;
+
+    border: 2px solid #fff;
+    border-radius: 0;
+    background-color: transparent ;
+
+
+  }
+}
