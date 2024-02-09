@@ -1,30 +1,37 @@
 const dataProjects = [
   {
     id: 1,
-    tittle: "SIAMES-MP3-PLAYER",
+    tittle: "SIAMES.MP3",
     image:
       "https://raw.githubusercontent.com/PEPAXD/SiamesMP3Player/main/screenshot.jpg",
     urlDeploy: "https://pepaxd.github.io/SiamesMP3Player/",
     urlRepo: "https://github.com/PEPAXD/SiamesMP3Player",
+
     text: "This is an interactive music player project to allow users to play, pause, skip songs, adjust the volume, and more. The music player is focus in a music band called SIAMES.mp3.",
+    challengeText:
+      "One challenge involved the random generation of 'bublekeys' and managing song storage using client storage.",
   },
   {
     id: 2,
-    tittle: "PetFinder-Adoption",
+    tittle: "PetFinder Adoption",
     image:
       "https://raw.githubusercontent.com/PEPAXD/PetFinder/main/WebSiteView%20(3).png",
     urlDeploy: "https://pepaxd.github.io/PetFinder/",
     urlRepo: "https://github.com/PEPAXD/PetFinder",
-    text: "PetFinder is a pet adoption website. It is dedicated to helping animals find their forever homes and connecting pet lovers with their ideal companions.",
+    text: "PetFinder, a pet adoption website, is on a mission to connect animals with their forever homes and unite pet lovers with their ideal companions.",
+    challengeText:
+      "I faced the challenge of creating a responsive interface with a creative design. Additionally, I integrated the Typed.js library to animate text.",
   },
   {
     id: 3,
-    tittle: "Authentication-App",
+    tittle: "Ensolvers TechChallenge",
     image:
       "https://media.licdn.com/dms/image/D4D22AQFce8xuMgHf7g/feedshare-shrink_2048_1536/0/1706031873311?e=1710374400&v=beta&t=W2xI3NLpNUSLdmKCSGfuO4szNktgmOn2kNPYEJC26N0",
     urlDeploy: "https://pepaxd.github.io/authenticationUser/",
     urlRepo: "https://github.com/PEPAXD/authenticationUser",
-    text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
+    text: "Web Application that allows users to create, view, update, and delete notes. Additionally, the application supports Google authentication to access app features.",
+    challengeText:
+      "This was a brief full-stack technical assessment project, requiring a solid understanding of the MERN stack, including Bootstrap, Passport, EJS.",
   },
   {
     id: 4,

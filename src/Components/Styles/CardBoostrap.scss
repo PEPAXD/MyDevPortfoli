@@ -1,6 +1,6 @@
 .card {
   width: 25rem;
-  height: 35rem;
+  height: 38rem;
   border: none;
   border-radius: 0rem;
 
@@ -10,7 +10,7 @@
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
   img {
-    height: 35%;
+    height: 30%;
     object-fit: cover;
   }
 
@@ -36,21 +36,29 @@
 .skillsContain {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
-  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.3rem;
 
   .techTittle {
     font-size: 1.2rem;
     font-style: italic;
+    font-weight: bold;
   }
 
   .skills {
-    font-size: 1.3em;
-  }
+    display: flex;
+    justify-content: flex-start;
 
-  svg {
-    font-size: 1.1em;
-    margin: 0rem 0.5rem;
+    padding-left: 5%;
+
+    gap: 1rem;
+
+    width: 100%;
+    font-size: 1.6em;
+
+
+
   }
 }
 

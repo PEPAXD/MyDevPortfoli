@@ -18,6 +18,7 @@ function App() {
                 tittle={data.tittle}
                 image={data.image}
                 text={data.text}
+                challengeText={data.challengeText}
                 urlDeploy={data.urlDeploy}
                 urlRepo={data.urlRepo}
               />
