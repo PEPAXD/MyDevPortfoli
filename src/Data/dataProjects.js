@@ -25,6 +25,16 @@ const dataProjects = [
       techStack: ["HTML5", "CSS3", "JavaScript"],
   },
   {
+    id: 7,
+    tittle: "Coffe Landing Page",
+    image:
+      "https://media.licdn.com/dms/image/D4D22AQEC5s6hbMD9Hw/feedshare-shrink_800/0/1694295450906?e=1710374400&v=beta&t=Wt-zHHYy59YRB87gVIZaeht5YANQ5mrceSV5ZrZ1-JM",
+    urlDeploy: "https://pepaxd.github.io/authenticationUser/",
+    urlRepo: "https://github.com/PEPAXD/authenticationUser",
+    text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
+  },
+  {
     id: 3,
     tittle: "Ensolvers TechChallenge",
     image:
@@ -34,6 +44,7 @@ const dataProjects = [
     text: "Web Application that allows users to create, view, update, and delete notes. Additionally, the application supports Google authentication to access app features.",
     challengeText:
       "This was a brief full-stack technical assessment project, requiring a solid understanding of the MERN stack, including Bootstrap, Passport, EJS.",
+      techStack: ["Node", "Express", "MongoDB", "Bootstrap"],
   },
   {
     id: 4,
@@ -45,7 +56,8 @@ const dataProjects = [
     text: "Current Weather data using API and display the weather information like Temperature, Weather condition, Humidity and Wind Speed according to the city",
     challengeText:
       "I faced the challenge of designing a creative interface by integrating the OpenWeather API. Notably, the cross-fade animations between homePage to mainPage.",
-  },
+      techStack: ["React"],
+    },
   {
     id: 5,
     tittle: "To-Do List",
@@ -56,7 +68,8 @@ const dataProjects = [
     text: "Simple To-Do List web application. It utilizes Firebase/Firestore for database management.",
     challengeText:
       "The main challenges were linking accounts through Firebase, creating and authenticating users, and storing their information in the database.",
-  },
+      techStack: ["Firebase"],
+    },
   {
     id: 6,
     tittle: "Authentication System",
@@ -67,18 +80,8 @@ const dataProjects = [
     text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook and GitHub.",
     challengeText:
     "It was my first experience working with a backend-as-a-service while implementing an authentication system using Firebase. I tackled the challenges of linking accounts and recording information.",
+    techStack: ["Firebase"],
   },
-  {
-    id: 7,
-    tittle: "Coffe Landing Page",
-    image:
-      "https://media.licdn.com/dms/image/D4D22AQEC5s6hbMD9Hw/feedshare-shrink_800/0/1694295450906?e=1710374400&v=beta&t=Wt-zHHYy59YRB87gVIZaeht5YANQ5mrceSV5ZrZ1-JM",
-    urlDeploy: "https://pepaxd.github.io/authenticationUser/",
-    urlRepo: "https://github.com/PEPAXD/authenticationUser",
-    text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
-    techStack: ["HTML5", "CSS3", "JavaScript"],
-  },
-  
 ];
 
 export default dataProjects;

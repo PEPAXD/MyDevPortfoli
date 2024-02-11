@@ -13,7 +13,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 
-import { SiMongodb, SiExpress } from "react-icons/si";
+import { SiMongodb, SiExpress, SiFirebase  } from "react-icons/si";
 
 import { BsBootstrapFill } from "react-icons/bs";
 
@@ -27,6 +27,7 @@ function TextExample(props) {
     Express: <SiExpress color="#fff" title="Express" />,
     Bootstrap: <BsBootstrapFill color="#563d7c" title="Bootstrap" />,
     MongoDB: <SiMongodb color="#13aa52" title="MongoDB" />,
+    Firebase: <SiFirebase color="#E5AB00" title="Firebase" />,
   };
 
   return (

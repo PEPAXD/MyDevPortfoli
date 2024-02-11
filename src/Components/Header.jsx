@@ -1,5 +1,5 @@
 import "./Styles/Header.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,7 +8,13 @@ import Container from "react-bootstrap/Container";
 import ToggleButton from "react-bootstrap/ToggleButton";
 
 function Header() {
-  const [checked, setChecked] = useState(true);
+  const [checked] = useState();
+  const [filters, setFilters] = useState([]);
+
+  useEffect(() => {
+    console.log(filters);
+    console.log(checked);
+  }, [filters, checked]);
 
   return (
     <header>
@@ -29,11 +35,13 @@ function Header() {
               title="Frontend"
               menuVariant="dark"
             >
-              <NavDropdown.Item href="#action/3.1">
+              <NavDropdown.Item onClick={() => setFilters(["HTML / CSS / JS"])}>
                 HTML / CSS / JS
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.2">React</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setFilters(["React"])}>
+                React
+              </NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown
@@ -41,13 +49,13 @@ function Header() {
               title="Backend"
               menuVariant="dark"
             >
-              <NavDropdown.Item href="#action/3.1">
+              <NavDropdown.Item onClick={() => setFilters(["Java"])}>
                 Java
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.2">Python</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setFilters(["Python"])}>Python</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.3">Firebase</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setFilters(["Firebase"])}>Firebase</NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown
@@ -55,19 +63,20 @@ function Header() {
               title="Full-Stack"
               menuVariant="dark"
             >
-              <NavDropdown.Item href="#action/3.1">
-                MERN Stack
-              </NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setFilters(["Node / Express / Bootstrap / MongoDB"])}>MERN Stack</NavDropdown.Item>
             </NavDropdown>
 
             <ToggleButton
               id="toggle-check"
               type="checkbox"
               variant="outline-secondary"
-
-              checked={checked}
+              checked={filters.length === 0}
               value="1"
-              onChange={(e) => setChecked(e.currentTarget.checked)}
+              onChange={(e) => {
+                if (e.currentTarget.checked) {
+                  setFilters([]);
+                }
+              }}
             >
               Show All
             </ToggleButton>
