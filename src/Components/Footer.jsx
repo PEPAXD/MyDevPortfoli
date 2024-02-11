@@ -15,7 +15,7 @@ export default function Footer() {
         style={{ backgroundColor: "rgb(33,37,41)" }}
       >
         <a className="text-white text-decoration-none pe-3" href="#">
-          &copy; {new Date().getFullYear()} Copyright - Developed By Mauro Pepa
+          &copy; {new Date().getFullYear()} 'Dev Portfoli' - Developed By Mauro Pepa
         </a>
       </div>
     </MDBFooter>

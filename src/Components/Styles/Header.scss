@@ -37,6 +37,10 @@ footer {
     .responsiveDivider {
       display: block;
     }
+
+    .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
   }
 }
 
