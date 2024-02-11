@@ -1,4 +1,4 @@
-import "./Styles/NavBar.scss";
+import "./Styles/Header.scss";
 import { useState } from "react";
 
 import Nav from "react-bootstrap/Nav";
@@ -16,7 +16,7 @@ function ContainerInsideExample() {
         variant="dark"
         bg="dark"
         expand="lg"
-        style={{ boxShadow: "0px 2px 10px 2px #000000" }}
+        style={{ boxShadow: "0px 0px 10px 0px #000000" }}
       >
         <Container>
           <Navbar.Brand href="#">Linktree - Dev Portfoli</Navbar.Brand>

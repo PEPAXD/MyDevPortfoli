@@ -7,9 +7,9 @@ const dataProjects = [
     urlDeploy: "https://pepaxd.github.io/SiamesMP3Player/",
     urlRepo: "https://github.com/PEPAXD/SiamesMP3Player",
 
-    text: "This is an interactive music player project to allow users to play, pause, skip songs, adjust the volume, and more. The music player is focus in a music band called SIAMES.mp3.",
+    text: "This is an interactive music player project to allow users to play, pause, skip songs, adjust the volume, and more. The music player is focus in a music band called SIAMES.",
     challengeText:
-      "One challenge involved the random generation of 'bublekeys' and managing song storage using client storage.",
+      "One challenge involved the random generation of 'bublekeys background' and managing song storage using client storage.",
       techStack: ["HTML5", "CSS3", "JavaScript"],
   },
   {

@@ -2,14 +2,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Styles/App.scss";
 import React from "react";
 
-import NavBar from "./NavBar";
+import Header from "./Header";
 import CardBoostrap from "./CardBoostrap";
 import data from "../Data/dataProjects";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Header />
       
       <div className="ContainApp">
         <div className="containerCards">

@@ -67,7 +67,7 @@ function TextExample(props) {
                 <FaExternalLinkAlt
                   style={{ marginRight: "10px", fontSize: "0.9em" }}
                 />
-                View Project
+                Web Project
               </a>
 
               <a
@@ -80,7 +80,7 @@ function TextExample(props) {
                 }}
               >
                 <FaCode style={{ marginRight: "10px" }} />
-                Source Code
+                GitHub Code
               </a>
             </div>
           </div>
