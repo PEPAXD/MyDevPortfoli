@@ -31,11 +31,30 @@ footer {
     .filterNavbar {
       padding-right: 0;
       padding-top: 0.5rem;
-      gap: 2rem;
+      gap: 1rem;
     }
 
     .responsiveDivider {
       display: block;
     }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .filterNavbar {
+    a {
+      font-size: 0.8em;
+    }
+
+    label {
+      font-size: 0.8em;
+      padding: 0.2rem 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .filterNavbar {
+    font-size: 0.8em;
   }
 }

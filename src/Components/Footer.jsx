@@ -1,3 +1,4 @@
+import "./Styles/Footer.scss";
 import React from "react";
 import { MDBFooter } from "mdb-react-ui-kit";
 
@@ -6,7 +7,7 @@ export default function Footer() {
   return (
     <MDBFooter
       bgColor="light"
-      className="text-end text-lg-left text-white"
+      className="Footer"
       style={{ boxShadow: "0px 0px 5px 0px #000000" }}
     >
       <div

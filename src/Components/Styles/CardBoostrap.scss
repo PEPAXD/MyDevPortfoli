@@ -100,3 +100,30 @@ hr {
     }
   }
 }
+
+
+@media screen and (max-width: 415px) {
+  .card {
+    width: 19rem;
+
+  }
+  .tittle {
+    font-size: 1.3rem;
+  }
+  
+  .skillsContain {
+    .techTittle {
+      font-size: 1rem;
+    }
+    .skills {
+      font-size: 1.3em;
+    }
+  }
+  
+  .linkContainer {
+    a {
+      font-size: 0.8em;
+      padding: 0.5rem 0.7rem;
+    }
+  }
+}

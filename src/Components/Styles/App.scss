@@ -10,5 +10,23 @@
 .ContainApp{
     display: flex;
     justify-content: center;
-    margin: 6% 0%;
+    margin: 7% 0%;
 }
+
+@media screen and (max-width: 770px) {
+  .ContainApp{
+    margin: 20% 0% 7% 0%;
+  }
+ }
+ 
+ @media screen and (max-width: 560px) {
+  .ContainApp{
+    margin: 27% 0% 10% 0%;
+  }
+ }
+
+ @media screen and (max-width: 415px) {
+  .ContainApp{
+    margin: 40% 0% 10% 0%;
+  }
+ }

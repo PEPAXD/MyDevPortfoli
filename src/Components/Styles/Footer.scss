@@ -1,0 +1,22 @@
+footer{
+  text-align: end;
+}
+
+
+@media screen and (max-width: 770px) {
+ footer{
+    text-align: center;
+ }
+}
+
+@media screen and (max-width: 415px) {
+  footer{
+    font-size: 0.8em;
+  }
+ }
+
+ @media screen and (max-width: 330px) {
+  footer {
+    font-size: 0.7em;
+  }
+}
