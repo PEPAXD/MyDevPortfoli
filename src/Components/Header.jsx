@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import ToggleButton from "react-bootstrap/ToggleButton";
 
-function ContainerInsideExample() {
+function Header() {
   const [checked, setChecked] = useState(true);
 
   return (
@@ -78,4 +78,4 @@ function ContainerInsideExample() {
   );
 }
 
-export default ContainerInsideExample;
+export default Header;

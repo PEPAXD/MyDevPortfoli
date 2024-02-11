@@ -3,6 +3,7 @@ import "./Styles/App.scss";
 import React from "react";
 
 import Header from "./Header";
+import Footer from "./Footer";
 import CardBoostrap from "./CardBoostrap";
 import data from "../Data/dataProjects";
 
@@ -27,8 +28,8 @@ function App() {
             </div>
           ))}
         </div>
-        
       </div>
+      <Footer />
 
     </>
   );

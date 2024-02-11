@@ -22,6 +22,7 @@ const dataProjects = [
     text: "PetFinder, a pet adoption website, is on a mission to connect animals with their forever homes and unite pet lovers with their ideal companions.",
     challengeText:
       "I faced the challenge of creating a responsive interface with a creative design. Additionally, I integrated the Typed.js library to animate text.",
+      techStack: ["HTML5", "CSS3", "JavaScript"],
   },
   {
     id: 3,
@@ -75,6 +76,7 @@ const dataProjects = [
     urlDeploy: "https://pepaxd.github.io/authenticationUser/",
     urlRepo: "https://github.com/PEPAXD/authenticationUser",
     text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
   },
   
 ];

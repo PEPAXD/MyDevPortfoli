@@ -41,3 +41,25 @@
   background-size: 40px 40px;
   pointer-events: none; /* Allow clicking through the pattern layer */
 }
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Estilo para el track (la parte que no se mueve) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  
+}
+
+/* Estilo para el handle (la parte que sí se mueve) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+
+}
+
+/* Estilo para el handle al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
