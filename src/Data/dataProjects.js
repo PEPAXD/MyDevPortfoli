@@ -10,6 +10,7 @@ const dataProjects = [
     text: "This is an interactive music player project to allow users to play, pause, skip songs, adjust the volume, and more. The music player is focus in a music band called SIAMES.mp3.",
     challengeText:
       "One challenge involved the random generation of 'bublekeys' and managing song storage using client storage.",
+      techStack: ["HTML5", "CSS3", "JavaScript"],
   },
   {
     id: 2,

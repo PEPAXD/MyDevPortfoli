@@ -22,6 +22,7 @@ function App() {
                 challengeText={data.challengeText}
                 urlDeploy={data.urlDeploy}
                 urlRepo={data.urlRepo}
+                techStack={data.techStack}
               />
             </div>
           ))}

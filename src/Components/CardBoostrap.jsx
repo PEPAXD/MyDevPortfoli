@@ -8,21 +8,27 @@ import {
   FaCode,
   FaReact,
   FaHtml5,
-  FaCss3Alt ,
+  FaCss3Alt,
   FaJs,
   FaNodeJs,
 } from "react-icons/fa";
 
-import {
-  SiMongodb,
-  SiExpress,
-} from "react-icons/si";
+import { SiMongodb, SiExpress } from "react-icons/si";
 
 import { BsBootstrapFill } from "react-icons/bs";
 
-
-
 function TextExample(props) {
+  const techIcons = {
+    HTML5: <FaHtml5 color="#e34f26" title="HTML5" />,
+    CSS3: <FaCss3Alt color="#1572b6" title="CSS3" />,
+    JavaScript: <FaJs color="#f7df1e" title="JavaScript" />,
+    React: <FaReact color="#61dbfb" title="React" />,
+    Node: <FaNodeJs color="#3c873a" title="Node" />,
+    Express: <SiExpress color="#fff" title="Express" />,
+    Bootstrap: <BsBootstrapFill color="#563d7c" title="Bootstrap" />,
+    MongoDB: <SiMongodb color="#13aa52" title="MongoDB" />,
+  };
+
   return (
     <div className="animateCard animate__animated animate__fadeInUp">
       <Card>
@@ -35,20 +41,14 @@ function TextExample(props) {
             <Card.Text>{props.challengeText}</Card.Text>
           </div>
 
-          
-
           <div className="techContain">
             <div className="skillsContain">
               <Card.Subtitle className="techTittle">Tech Skills</Card.Subtitle>
               <div className="skills">
-                <FaHtml5 color="#e34f26" title="HTML5" />
-                <FaCss3Alt color="#1572b6" title="CSS3" />
-                <FaJs color="#f7df1e" title="JavaScript" />
-                <FaReact color="#61dbfb" title="React" />
-                <FaNodeJs color="#3c873a" title="Node" />
-                <SiExpress color="#fff" title="Express" />
-                <BsBootstrapFill color="#563d7c" title="Bootstrap" />     
-                <SiMongodb color="#13aa52" title="MongoDB" />  
+                {props.techStack &&
+                  props.techStack.map((tech, index) =>
+                    React.cloneElement(techIcons[tech], { key: index })
+                  )}
               </div>
             </div>
 
