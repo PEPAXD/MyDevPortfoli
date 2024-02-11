@@ -12,31 +12,30 @@ footer {
   z-index: 1;
 }
 
-.HeaderContainer {
-  height: 3rem;
-  background-color: #325d73;
-  box-shadow: 0px 0px 10px 0px #000000;
+.filterNavbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
 }
 
-.skillsCheckboxes {
-    
+.responsiveDivider {
+  display: none;
+}
 
-
-  label {
-
+@media screen and (max-width: 600px) {
+  .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
-    height: 3rem;
-    width: 8rem;
+    .filterNavbar {
+      padding-right: 0;
+      padding-top: 0.5rem;
+      gap: 2rem;
+    }
 
-    font-size: 1.2em;
-
-    border: 2px solid #fff;
-    border-radius: 0;
-    background-color: transparent ;
-
-
+    .responsiveDivider {
+      display: block;
+    }
   }
 }

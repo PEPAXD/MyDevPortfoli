@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <NavBar />
+      
       <div className="ContainApp">
         <div className="containerCards">
           {data.map((data) => (

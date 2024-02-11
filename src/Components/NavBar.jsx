@@ -1,47 +1,80 @@
 import "./Styles/NavBar.scss";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-
 import { useState } from "react";
+
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Container from "react-bootstrap/Container";
 import ToggleButton from "react-bootstrap/ToggleButton";
-import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
 
-function ContainerInsideExample({ position }) {
-  const NavbarComponent = position === "footer" ? "footer" : "header";
-
-  const [value, setValue] = useState([]);
-  const handleChange = (val) => setValue(val);
+function ContainerInsideExample() {
+  const [checked, setChecked] = useState(true);
 
   return (
-    <NavbarComponent>
-      <Navbar expand="lg" className="HeaderContainer">
-        <Container className="header">
-          <Navbar.Brand href="#" className="text-light">
-            Linktree - Dev Profile
-          </Navbar.Brand>
+    <header>
+      <Navbar
+        variant="dark"
+        bg="dark"
+        expand="lg"
+        style={{ boxShadow: "0px 2px 10px 2px #000000" }}
+      >
+        <Container>
+          <Navbar.Brand href="#">Linktree - Dev Portfoli</Navbar.Brand>
 
-          <ToggleButtonGroup className="skillsCheckboxes"
-            type="checkbox"
-            value={value}
-            onChange={handleChange}
-          >
-            <ToggleButton id="tbg-btn-1" value={1}>
-              HTML
-            </ToggleButton>
-            <ToggleButton id="tbg-btn-2" value={2}>
-              CSS
-            </ToggleButton>
-            <ToggleButton id="tbg-btn-3" value={3}>
-              JavaScript
-            </ToggleButton>
-            <ToggleButton id="tbg-btn-4" value={4}>
-              React
-            </ToggleButton>
-          </ToggleButtonGroup>
+          <NavDropdown.Divider className="responsiveDivider" />
 
+          <Nav className="filterNavbar">
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Frontend"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item href="#action/3.1">
+                HTML / CSS / JS
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.2">React</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Backend"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item href="#action/3.1">
+                Java
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.2">Python</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.3">Firebase</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Full-Stack"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item href="#action/3.1">
+                MERN Stack
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <ToggleButton
+              id="toggle-check"
+              type="checkbox"
+              variant="outline-secondary"
+
+              checked={checked}
+              value="1"
+              onChange={(e) => setChecked(e.currentTarget.checked)}
+            >
+              Show All
+            </ToggleButton>
+          </Nav>
         </Container>
       </Navbar>
-    </NavbarComponent>
+    </header>
   );
 }
 

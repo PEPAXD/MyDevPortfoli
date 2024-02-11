@@ -8,7 +8,7 @@ import {
   FaCode,
   FaReact,
   FaHtml5,
-  FaCss3,
+  FaCss3Alt ,
   FaJs,
   FaNodeJs,
 } from "react-icons/fa";
@@ -42,7 +42,7 @@ function TextExample(props) {
               <Card.Subtitle className="techTittle">Tech Skills</Card.Subtitle>
               <div className="skills">
                 <FaHtml5 color="#e34f26" title="HTML5" />
-                <FaCss3 color="#1572b6" title="CSS3" />
+                <FaCss3Alt color="#1572b6" title="CSS3" />
                 <FaJs color="#f7df1e" title="JavaScript" />
                 <FaReact color="#61dbfb" title="React" />
                 <FaNodeJs color="#3c873a" title="Node" />
