@@ -9,16 +9,10 @@ import data from "../Data/dataProjects";
 
 function App() {
   const [filtersArray, setFiltersArray] = useState([]);
-  const [key, setKey] = useState(Date.now());
 
   const handleFiltersChange = (newFilters) => {
     setFiltersArray(newFilters);
-    setKey(Date.now());
   };
-
-  useEffect(() => {
-    console.log(filtersArray);
-  }, [filtersArray]);
 
   return (
     <>
@@ -35,7 +29,6 @@ function App() {
             .map((data) => (
               <div className="cards" key={data.id}>
                 <CardBoostrap
-                  key={key}
                   tittle={data.tittle}
                   image={data.image}
                   text={data.text}

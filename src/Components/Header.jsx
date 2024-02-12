@@ -61,7 +61,7 @@ function Header({ onFiltersChange }) {
               title="Full-Stack"
               menuVariant="dark"
             >
-              <NavDropdown.Item onClick={() => setFilters(["Node / Express / Bootstrap / MongoDB"])}>MERN Stack</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setFilters(["Node", "Express", "MongoDB", "Bootstrap"])}>MERN Stack</NavDropdown.Item>
             </NavDropdown>
 
             <ToggleButton
