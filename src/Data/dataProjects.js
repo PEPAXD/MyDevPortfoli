@@ -32,7 +32,7 @@ const dataProjects = [
     urlDeploy: "https://pepaxd.github.io/authenticationUser/",
     urlRepo: "https://github.com/PEPAXD/authenticationUser",
     text: "Register, log in, and authenticate securely within the application, manage various authentication methods, including email and password, Google, Facebook, GitHub, among others.",
-    techStack: ["HTML5", "CSS3", "JavaScript"],
+    techStack: ["HTML5", "CSS3",],
   },
   {
     id: 3,

@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Styles/App.scss";
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -8,9 +8,21 @@ import CardBoostrap from "./CardBoostrap";
 import data from "../Data/dataProjects";
 
 function App() {
+
+  const [filtersArray, setFiltersArray] = useState([]);
+
+  const handleFiltersChange = (newFilters) => {
+    setFiltersArray(newFilters);
+  };
+
+  useEffect(() => {
+   console.log(filtersArray);
+  }, [filtersArray]);
+
+
   return (
     <>
-      <Header />
+      <Header onFiltersChange={handleFiltersChange}/>
       
       <div className="ContainApp">
         <div className="containerCards">

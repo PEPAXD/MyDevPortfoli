@@ -7,14 +7,12 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import ToggleButton from "react-bootstrap/ToggleButton";
 
-function Header() {
-  const [checked] = useState();
+function Header({ onFiltersChange }) {
   const [filters, setFilters] = useState([]);
 
   useEffect(() => {
-    console.log(filters);
-    console.log(checked);
-  }, [filters, checked]);
+    onFiltersChange(filters);
+  }, [filters]);
 
   return (
     <header>
