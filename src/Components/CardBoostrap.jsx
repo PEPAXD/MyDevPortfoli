@@ -31,7 +31,7 @@ function TextExample(props) {
   };
 
   return (
-    <div className="animateCard animate__animated animate__fadeInUp">
+    <div className={`animateCard animate__animated animate__fadeInUp ${props.key}`}>
       <Card>
         <img src={props.image} alt="siamesMp3Player" />
 

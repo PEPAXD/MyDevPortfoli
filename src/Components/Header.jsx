@@ -33,7 +33,7 @@ function Header({ onFiltersChange }) {
               title="Frontend"
               menuVariant="dark"
             >
-              <NavDropdown.Item onClick={() => setFilters(["HTML / CSS / JS"])}>
+              <NavDropdown.Item onClick={() => setFilters(["HTML5",  "CSS3",  "JavaScript"])}>
                 HTML / CSS / JS
               </NavDropdown.Item>
               <NavDropdown.Divider />
