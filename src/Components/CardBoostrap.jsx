@@ -11,10 +11,11 @@ import {
   FaCss3Alt,
   FaJs,
   FaNodeJs,
+  FaPython,
+  FaJava,
 } from "react-icons/fa";
 
-import { SiMongodb, SiExpress, SiFirebase  } from "react-icons/si";
-
+import { SiMongodb, SiExpress, SiFirebase } from "react-icons/si";
 import { BsBootstrapFill } from "react-icons/bs";
 
 function TextExample(props) {
@@ -28,12 +29,16 @@ function TextExample(props) {
     Bootstrap: <BsBootstrapFill color="#563d7c" title="Bootstrap" />,
     MongoDB: <SiMongodb color="#13aa52" title="MongoDB" />,
     Firebase: <SiFirebase color="#E5AB00" title="Firebase" />,
+    Python: <FaPython color="#FFD03D" title="Python" />,
+    Java: <FaJava color="#007396" title="Java" />,
   };
 
   return (
-    <div className={`animateCard animate__animated animate__fadeInUp ${props.key}`}>
+    <div
+      className={`animateCard animate__animated animate__fadeInUp ${props.key}`}
+    >
       <Card>
-        <img src={props.image} alt="siamesMp3Player" />
+        <img src={props.image} alt="refImg" />
 
         <Card.Body>
           <div className="textContain">
@@ -56,20 +61,22 @@ function TextExample(props) {
             <hr />
 
             <div className="linkContainer">
-              <a
-                href={props.urlDeploy}
-                target="_blank"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <FaExternalLinkAlt
-                  style={{ marginRight: "10px", fontSize: "0.9em" }}
-                />
-                Web Project
-              </a>
+              {props.urlDeploy && (
+                <a
+                  href={props.urlDeploy}
+                  target="_blank"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <FaExternalLinkAlt
+                    style={{ marginRight: "10px", fontSize: "0.9em" }}
+                  />
+                  Web Project
+                </a>
+              )}
 
               <a
                 href={props.urlRepo}

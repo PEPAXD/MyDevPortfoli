@@ -23,7 +23,7 @@ function Header({ onFiltersChange }) {
         style={{ boxShadow: "0px 0px 10px 0px #000000" }}
       >
         <Container>
-          <Navbar.Brand href="#">Linktree - Dev Portfoli</Navbar.Brand>
+          <Navbar.Brand href="https://pepaxd.github.io/LinkTree_DevMp/">Linktree - Dev Portfoli</Navbar.Brand>
 
           <NavDropdown.Divider className="responsiveDivider" />
 
