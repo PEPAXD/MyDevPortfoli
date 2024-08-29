@@ -25,7 +25,7 @@ const dataProjects = [
     techStack: ["HTML5", "CSS3", "JavaScript"],
   },
   {
-    id: 7,
+    id: 5,
     tittle: "Coffee - Landing Page",
     image:
       "https://media.licdn.com/dms/image/D4D22AQEC5s6hbMD9Hw/feedshare-shrink_800/0/1694295450906?e=1710374400&v=beta&t=Wt-zHHYy59YRB87gVIZaeht5YANQ5mrceSV5ZrZ1-JM",
@@ -49,7 +49,19 @@ const dataProjects = [
     techStack: ["React"],
   },
   {
-    id: 5,
+    id: 3,
+    tittle: "Darkest Builder",
+    image:
+      "https://raw.githubusercontent.com/PEPAXD/Darkest-Builder-Deploy/main/Darkest%20Builder/screenshots/Wiki.jpg",
+    urlDeploy: "https://pepaxd.github.io/Darkest-Builder-Deploy/",
+    urlRepo: "https://github.com/PEPAXD/Darkest-Builder-Deploy",
+    text: "An interactive website about Darkest Dungeon 2 game. It allows users to research and explore detailed information about different hero builds and unique equipment combinations to maximize their efficiency in the game.",
+    challengeText:
+      "UX/UI design was a challenge, as well as the integration of the JSON to display the information.",
+    techStack: ["React"],
+  },
+  {
+    id: 6,
     tittle: "To-Do List",
     image:
       "https://media.licdn.com/dms/image/D4D22AQG3Sd0ynsI1Pg/feedshare-shrink_2048_1536/0/1702498975550?e=1710374400&v=beta&t=1cEp6iY0LtJ7nzB03RvzqZ3D1B3ubRpgpxND14SkNVs",
@@ -73,7 +85,7 @@ const dataProjects = [
     techStack: ["Firebase"],
   },
   {
-    id: 3,
+    id: 7,
     tittle: "Ensolvers TechChallenge",
     image:
       "https://raw.githubusercontent.com/PEPAXD/noteApp_MERN/main/home.png",
