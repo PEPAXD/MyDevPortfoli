@@ -28,7 +28,7 @@ const dataProjects = [
     id: 5,
     tittle: "Coffee - Landing Page",
     image:
-      "https://media.licdn.com/dms/image/D4D22AQEC5s6hbMD9Hw/feedshare-shrink_800/0/1694295450906?e=1710374400&v=beta&t=Wt-zHHYy59YRB87gVIZaeht5YANQ5mrceSV5ZrZ1-JM",
+      "https://raw.githubusercontent.com/PEPAXD/CoffeeLandingPage/main/imagen_2023-09-11_174739504.png",
     urlDeploy: "https://pepaxd.github.io/CoffeeLandingPage/",
     urlRepo: "https://github.com/PEPAXD/CoffeeLandingPage",
     text: "Elegant and responsive landing page for coffee enthusiasts. This project showcases a visually appealing website centered around a coffee bar.",
@@ -64,7 +64,7 @@ const dataProjects = [
     id: 14,
     tittle: "To-Do List",
     image:
-      "https://media.licdn.com/dms/image/D4D22AQG3Sd0ynsI1Pg/feedshare-shrink_2048_1536/0/1702498975550?e=1710374400&v=beta&t=1cEp6iY0LtJ7nzB03RvzqZ3D1B3ubRpgpxND14SkNVs",
+      "https://raw.githubusercontent.com/PEPAXD/To_Do_List/main/2.png",
     urlDeploy: "https://pepaxd.github.io/To_Do_List/",
     urlRepo: "https://github.com/PEPAXD/To_Do_List/tree/main",
     text: "Simple to-do list web application. Uses Firebase/Firestore for database management.",
@@ -76,7 +76,7 @@ const dataProjects = [
     id: 6,
     tittle: "Authentication System",
     image:
-      "https://media.licdn.com/dms/image/D4D22AQHz6NKoyNh_4A/feedshare-shrink_2048_1536/0/1699381089101?e=1710374400&v=beta&t=KVnB9-e4oEw3nauC8uMXClBR7gGETVqT2TODppxkS84",
+      "https://raw.githubusercontent.com/PEPAXD/authenticationUser/main/screenshot.jpg",
     urlDeploy: "https://pepaxd.github.io/authenticationUser/",
     urlRepo: "https://github.com/PEPAXD/authenticationUser",
     text: "Registration, login and secure authentication within the application, handling multiple authentication methods, including email and password or via the user's Google, Facebook and GitHub accounts",
